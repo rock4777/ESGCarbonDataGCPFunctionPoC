@@ -13,7 +13,7 @@ def getESGData (url, filter, headers):
     return print('Download Complete.')
 
 def normESGData():
-    df = pd.read_csv('download.csv',converters={'Sustainable Development Goals': convert_dtype})
+    df = pd.read_csv('download.csv',converters={'Sustainable Development Goals': convertDtype})
     df.columns = df.columns.str.replace(' ', '')
     df.columns = df.columns.str.replace('/', '')
     df.index.rename('Key_Col', inplace=True)
@@ -28,7 +28,7 @@ def exportESGtoCSV(df):
 
     return filename
 
-def convert_dtype(x):
+def convertDtype(x):
     if not x:
         return ''
     try:

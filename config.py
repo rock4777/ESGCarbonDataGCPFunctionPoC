@@ -2,7 +2,7 @@
 url = "https://registry.verra.org/uiapi/asset/asset/search?$skip=0&count=true&$format=csv"
 
 # Filter for assets
-data_filter = {
+dataFilter = {
     "program":"VCS",
     "issuanceTypeCodes":["ISSUE"]
 }

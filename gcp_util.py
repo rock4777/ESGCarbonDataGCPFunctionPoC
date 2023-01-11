@@ -1,7 +1,7 @@
 from google.cloud import storage
 from google.cloud import bigquery
 
-def upload_to_bucket(bucket_name, blob_path, local_path):
+def uploadToBucket(bucket_name, blob_path, local_path):
     bucket = storage.Client().bucket(bucket_name)
     blob = bucket.blob(blob_path)
     blob.upload_from_filename(local_path)
