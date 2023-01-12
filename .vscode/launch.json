@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "name": "Deploy Cloud Function",
+            "type": "cloudcode.cloudfunctions",
+            "request": "launch",
+            "functionName": "esg-etl",
+            "gen": "GEN_2",
+            "revision": "",
+            "entryPoint": "esg_etl",
+            "testInput": ""
+        }
+    ]
+}
